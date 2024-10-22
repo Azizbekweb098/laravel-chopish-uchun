@@ -1,7 +1,11 @@
 <?php
 
+use App\Http\Controllers\phoneCotnroller;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TelefonController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +22,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::prefix('admin')->name('admin.')->group( function () {
+ Route::resource('/phone', phoneCotnroller::class);
+ Route::resource('/user', UserController::class);
+ Route::resource('/tell', TelefonController::class);
+ 
+});
 Route::get('/admin/dashboard', function () {
     return view('admin/dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
