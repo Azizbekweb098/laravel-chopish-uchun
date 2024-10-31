@@ -10,6 +10,8 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use App\Models\Phone;
 use App\Models\Tell;
+use App\Models\Malumot;
+use App\Models\Mahsulot;
 
 
 class User extends Authenticatable
@@ -53,6 +55,14 @@ class User extends Authenticatable
     public function image()
     {
       return $this->hasOne(Tell::class);
+    }
+    public function malumot()
+    {
+      return $this->hasOne(Malumot::class);
+    }
+    public function mhm()
+    {
+      return $this->hasOne(Mahsulot::class);
     }
 }
 

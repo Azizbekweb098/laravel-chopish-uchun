@@ -40,7 +40,26 @@
             </a>
     
           </li>
+
           <li class="nav-item menu-open">
+            <a href="{{ route('admin.mahsulotlar.index') }}" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                mahsulotlar
+              </p>
+            </a>
+    
+          </li>
+          <li class="nav-item menu-open">
+            <a href="{{ route('admin.user.index') }}" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                user
+              </p>
+            </a>
+    
+          </li>
+                    <li class="nav-item menu-open">
             <a href="{{ route('admin.phone.index') }}" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
@@ -68,15 +87,50 @@
     
           </li>
           <li class="nav-item menu-open">
-            <a href="{{ route('admin.tell.index') }}" class="nav-link active">
+            <a href="{{ route('admin.new.index') }}" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                odam
+                malumot 
               </p>
             </a>
     
           </li>
-
+          <li class="nav-item menu-open">
+            <a href="{{ route('admin.post.index') }}" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                post 
+              </p>
+            </a>
+    
+          </li>
+          <li class="nav-item menu-open">
+            <a href="{{ route('admin.category.index') }}" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                category
+              </p>
+            </a>
+    
+          </li>
+          <li class="nav-item menu-open">
+            <a href="{{ route('admin.pst.index') }}" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                post-2
+              </p>
+            </a>
+    
+          </li>
+          <li class="nav-item menu-open">
+            <a href="{{ route('admin.ctg.index') }}" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                category-2
+              </p>
+            </a>
+    
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

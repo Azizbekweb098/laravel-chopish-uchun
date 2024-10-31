@@ -13,6 +13,9 @@
     <input type="email" class="form-control" value="{{ $user->email }}" name="email">
   </div>
 
+
+
+  
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
